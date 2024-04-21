@@ -11,7 +11,7 @@ public class BrowserManager {
     public WebDriver launchApp() throws InterruptedException {
 
         chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--disable-popup-blocking", "--disable-infobars", "--fast-start", "--no-sandbox", "--ignore-certificate-errors", "--start-maximized");
+        chromeOptions.addArguments("--disable-popup-blocking", "--disable-infobars", "--fast-start", "--no-sandbox", "--remote-allow-origins=*", "--ignore-certificate-errors", "--start-maximized");
         WebDriver driver = WebDriverManager.chromedriver().capabilities(chromeOptions).create();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
