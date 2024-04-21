@@ -68,5 +68,16 @@ The `ApiTestAutomation.java` file contains test methods (`testGETRequest`, `test
 
 6. Cucumber document report is made on this directory "ui-api-test-automation/target".
 
+### Running UI And API Tests With Cucumber
+1. Navigate to the repository.
+2. Make any changes to the repository and commit and push
+3. Navigate to Actions.
+4. You should see a new job created following any push to the repository
+5. Click on build and you should see the logs
+6. Following build of the project, test cases will be executed. 
+   
+
+   
+
 
 
